@@ -185,17 +185,17 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Paul and Rochelle's Wedding",
+            title: "Albert and Dana's Wedding",
 
             // Event start date
-            start: new Date('Jun 25, 2021 16:00'),
+            start: new Date('Dec 27, 2021 13:30'),
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('Jun 25, 2021 21:00'),
+            end: new Date('Dec 27, 2021 21:00'),
 
             // Event Address
-            address: 'Aquila Crystal Palace, Tagaytay City',
+            address: 'San Agustin Church Intramuros, Manila',
 
             // Event Description
             description: "We can't wait to see you on our big day. For any queries or issues contact us: Paul (09088648597) | Rochelle (09190076370)"
@@ -234,7 +234,7 @@ $(document).ready(function () {
             } else if  (MD5($('#invite_code').val()) === '5d50d22735a7469266aab23fd8aeb536' && $('#extras').val() > 6) {
                 $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Only up to 6 companions is allowed.'));
             } else {
-                $.post('https://script.google.com/macros/s/AKfycbz_ZMTT3z_ddvT1GipnH7HGA2HWb27eMmDb6Fz-I5sxe7dkKdpRF0Tp0NAy1lJ41Mzb/exec', data)
+                $.post('https://script.google.com/macros/s/AKfycbwvxuCjWQ4fiRswOjRyuUfKyyk8cGwDvEcquguaNBPqXg7NAFcj0_QAGaKQTPvqdSLy0g/exec', data)
                     .done(function (data) {
                         console.log(data);
                         if (data.result === "error") {
