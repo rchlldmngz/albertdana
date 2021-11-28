@@ -4,8 +4,8 @@
 p {
     font-size: 15px;
     line-height: 29px;
-    color: #3D4351;
-    padding-bottom: 20px
+    color: black;
+    padding-bottom: 12px
 }
 
 h1 {
@@ -15,11 +15,11 @@ h1 {
 h2 {
     font-size: 40px;
     font-weight: 300;
-    color: #3D4351
+    color: black
 }
 
 h3 {
-    color: #3D4351;
+    color: #385291;
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
@@ -32,10 +32,21 @@ h4 {
 }
 
 h5 {
-    font-size: 15px;
-    color: #3D4351;
+    font-size: 18px;
+    color: #385291;
+    font-weight: bold;
     text-transform: uppercase;
     font-weight: 500
+}
+
+h6 {
+    color: #385291;
+    font-size: 50px;
+    letter-spacing: 3px;
+    line-height: 29px;
+    font-family: 'Olivia Dhorgent', sans-serif;
+    padding-top: 40px;
+                                                
 }
 
 .btn {
@@ -47,14 +58,14 @@ h5 {
     display: inline-block;
     text-transform: uppercase
 }
-
+/*not in use*/
 .btn:hover,
 .btn:focus {
-    color: #fff;
-    border-color: rgb(93, 161, 157);
-    background-color: rgb(93, 161, 157)
+    color: rgb(248, 4, 4);
+    border-color: rgb(235, 9, 9);
+    background-color: rgb(243, 1, 1)
 }
-
+/*bilog ng RSVP*/
 .btn-white {
     font-size: 13px;
     border: solid 2px;
@@ -62,58 +73,45 @@ h5 {
     -webkit-border-radius: 40px;
     border-radius: 40px;
     display: inline-block;
-    border-color: #fff
+    border-color: #ffff
 }
-
+/*RSVP*/
 .btn-white:hover,
 .btn-white:focus {
-    color: rgb(93, 161, 157);
-    border-color: rgb(93, 161, 157)
+    color: #ffff;
+    border-color: #ffff;
 }
-
+/*submit*/
 .btn-fill {
     color: #fff;
-    border: solid 2px rgb(93, 161, 157);
+    border: solid 2px #385291;
     -moz-border-radius: 40px;
     -webkit-border-radius: 40px;
     border-radius: 40px;
     display: inline-block;
     text-transform: uppercase;
-    background-color: rgb(93, 161, 157)
+    background-color: #385291
 }
 
 .btn-fill:hover,
 .btn-fill:focus {
-    color: #fff;
-    background-color: #d3b56a;
-    border-color: #d3b56a
+    color: #ffff;
+    background-color: #5b7ac2;
+    border-color: #5b7ac2
 }
 
 .btn-small {
-    padding: 8px 30px
+    padding: 10px 45px
 }
 
 .btn-large {
-    padding: 15px 40px
+    padding: 15px 50px
 }
 
 .btn-margin-right {
     margin-right: 20px
 }
 
-section.intro,
-section.features-extra,
-section.rsvp {
-    background-blend-mode: lighten;
-    background-color: rgba(255, 255, 255, 0.418);
-}
-
-section.features,
-section.events,
-section.blog {
-    background-color: rgba(255, 255, 255, 0.418);
-}
-}
 
 .group:after {
     content: "";
@@ -128,9 +126,9 @@ section.blog {
 .no-margin {
     margin: 0
 }
-
+/*floating arrow bottom*/
 a {
-    color: rgb(93, 161, 157);
+    color: #385291;
     -webkit-transition-timing-function: ease;
     transition-timing-function: ease;
     -webkit-transition-duration: 200ms;
@@ -144,16 +142,13 @@ a:focus {
     color: #d3b56a;
     text-decoration: none
 }
-
+/*safety protocol numbered*/
 body {
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
+    color: black;
     -webkit-text-size-adjust: 100%;
-    background-image: url("../img/overlap.png");
-    background-attachment: fixed;
-    background-size: contain;
-    color:rgba(150, 231, 226, 0.8);
-
+    background: white
 }
 
 *:focus {
@@ -165,21 +160,22 @@ ol {
     margin: 0;
     padding: 0
 }
-
+s
 ul li {
     list-style: none
 }
 
 section .header {
-    padding-bottom: 30px
+    padding-bottom: 10px
 }
 
 .section-padding {
-    padding: 40px 0
-}
-
+    padding: 10px 0;
+    
+}  
+/*not in use*/
 .section-border {
-    border-bottom: 1px solid #E6E9EA
+    border-bottom: 1px solid #ec0808
 }
 
 .tooltip {
@@ -219,15 +215,15 @@ section .header {
     padding: 0 5px;
     margin-left: -3px
 }
-
+/*not in use*/
 .tooltip-inner {
     max-width: 200px;
     padding: 3px 8px;
-    color: #fff;
+    color: rgb(241, 8, 8);
     text-align: center;
     text-decoration: none;
     text-transform: capitalize;
-    background-color: #000;
+    background-color: rgb(240, 4, 4);
     border-radius: 4px
 }
 
@@ -330,26 +326,26 @@ section .header {
     top: 0;
     right: 15px;
     z-index: 999999;
-    padding: 10px 35px 16px 0;
+    padding: 15px 0px 0px 0;
     cursor: pointer
 }
 
 .nav-toggle:focus {
     outline: none
 }
-
+/* close button in Navigation pane when mobile mode*/
 .nav-toggle span,
 .nav-toggle span:before,
 .nav-toggle span:after {
     content: "";
     position: absolute;
     display: block;
-    width: 35px;
+    width: 32px;
     height: 3px;
     -moz-border-radius: 1px;
     -webkit-border-radius: 1px;
     border-radius: 1px;
-    background: #fff;
+    background: #ffff;
     cursor: pointer
 }
 
@@ -400,14 +396,14 @@ section .header {
     position: absolute;
     height: 26px;
     right: 10px;
-    top: 48px;
+    top: 30px;
     visibility: hidden;
     transition: all 300ms ease-in-out
 }
 
 .hero {
     min-height: 700px;
-    background: url("../img/banner.jpg") center center;
+    background: url("../img/banner.png") center center;
     -webkit-background-size: contain;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -415,18 +411,18 @@ section .header {
     position: relative;
     background-position: center;
 }
-
+/*floating Arrow top*/
 .hero .down-arrow a {
-    color: rgba(93, 161, 157)
+    color: #fff
 }
-
+/*not in use*/
 .hero h1 {
-    color: #fff;
+    color: rgb(243, 1, 1);
     margin-bottom: 40px
 }
-
+/*not in use*/
 .hero p.intro {
-    color: #fff;
+    color: rgb(248, 2, 2);
     font-size: 20px;
     font-weight: 300;
     margin-bottom: 80px
@@ -437,7 +433,7 @@ section .header {
 }
 
 .hero .hero-content img {
-    width: 55%;
+    width: 45%;
     margin-bottom: 2%
 }
 
@@ -447,28 +443,27 @@ section .header {
     width: 100%;
     z-index: 999
 }
-
+/*full header*/
 .fixed {
-    padding: 0px 20px;
+    padding: 0px 0px;
     position: fixed;
-    background-color: rgba(93, 161, 157, 0.8);
+    background-color: #385391f5;
     z-index: 999;
     width: 100%
 }
-
+/*inner box of header*/
 header {
-    padding: 50px 20px;
+    padding: 10px 0px;
     border-bottom: solid 1px rgba(255, 255, 255, 0.2);
     position: relative;
     text-align: left;
     width: 100%;
     margin: 0 auto;
-    // background-color: rgba(93, 161, 157, 0.6);
     transition: padding 300ms ease-in-out
 }
-
+/*not in use*/
 header a {
-    color: #fff;
+    color: rgb(248, 0, 0);
     text-transform: uppercase;
     font-size: 13px
 }
@@ -482,25 +477,26 @@ header .logo {
 }
 
 header .logo img {
-    height: 20px
+    height: 60px;
 }
 
 header ul.primary-nav {
-    margin: 0 0 0 75px;
+    margin: 0 0 0 60px;
     padding: 0
 }
 
 header ul.primary-nav li {
     display: inline
 }
-
+/*header*/
 header ul.primary-nav li a {
-    color: #fff;
+    color: #ffff;
     padding-right: 25px
 }
 
 header ul.primary-nav li a:hover {
-    color: rgb(93, 161, 157)
+    color: #ffff;
+    font-weight: bold;
 }
 
 header ul.primary-nav li:last-child a {
@@ -510,13 +506,14 @@ header ul.primary-nav li:last-child a {
 header ul.member-actions li {
     display: inline
 }
-
+/*rsvp in oval*/
 header ul.member-actions li a {
-    color: #fff
+    color: #ffff
 }
 
 header ul.member-actions li a:hover {
-    color: rgb(93, 161, 157)
+    color: #fff;
+    font-weight: bold;
 }
 
 header .header-nav {
@@ -526,7 +523,7 @@ header .header-nav {
 header .member-actions {
     position: absolute;
     right: 0;
-    top: 41px;
+    top: 20px;
     transition: all 300ms ease-in-out
 }
 
@@ -542,10 +539,10 @@ header .member-actions {
 .share-bar {
     margin-top: 20px
 }
-
+/*Not in Use*/
 .intro span.icon {
     font-size: 40px;
-    color: rgb(93, 161, 157);
+    color: rgb(236, 3, 3);
     font-weight: bold
 }
 
@@ -587,10 +584,10 @@ header .member-actions {
 .features h3 {
     margin: 0 0 20px 0
 }
-
+/*not in use*/
 .features span.icon {
     font-size: 35px;
-    color: rgb(93, 161, 157);
+    color: rgb(241, 2, 2);
     font-weight: bold
 }
 
@@ -622,11 +619,11 @@ header .member-actions {
 .features ul.features-stack {
     margin-top: 50px
 }
-
+/*not in use*/
 .features ul.features-stack li {
     margin-top: 20px;
     padding-bottom: 20px;
-    border-bottom: solid 1px #E6E9EA
+    border-bottom: solid 1px #f10606
 }
 
 .features ul.features-stack li:last-child {
@@ -691,12 +688,12 @@ header .member-actions {
     padding-bottom: 190px;
     position: relative
 }
-
+/*not in use*/
 .hero-strip i {
     font-family: "Nunito", sans-serif;
     font-weight: 300;
     font-size: 25px;
-    color: #F69D52;
+    color: #f00b0b;
     vertical-align: top;
     margin-left: -8px;
     font-style: normal
@@ -724,16 +721,16 @@ header .member-actions {
     transform: translateX(-50%)
 }
 
-.events .leftcol {
+.events .leftcol .other.safety .unplugged {
     padding-right: 100px;
     border-right: solid 1px #E6E9EA
 }
 
-.events .rightcol {
+.events .rightcol .other .safety .unplugged{
     padding-left: 100px
 }
 
-.events .time {
+.events .time .safety .other .unplugged{
     font-size: 13px;
     font-style: italic;
     text-transform: lowercase;
@@ -822,11 +819,23 @@ header .member-actions {
 
 .blog figcaption a.blog-post-title:hover,
 .blog figcaption a.blog-post-title:focus {
-    color: #3D4351
+    color: black
 }
 
+#safety img,
+#other img,
 #instagram img {
-    width: 100%
+    width: 200%;
+}
+
+#events img {
+    width: 100%;
+
+}
+
+#attire img,
+#gift img{
+    width: 70%;
 }
 
 #eng-pics img {
@@ -916,7 +925,7 @@ header .member-actions {
 #video-content {
     width: 100%;
     height: 100%;
-    padding-top: 100px;
+    padding-top: 50px;
     position: relative;
     background: rgba(17, 17, 17, 0.5);
     text-align: center
@@ -947,14 +956,14 @@ header .member-actions {
 #map-content {
     margin-top: 40px;
     padding: 50px 60px;
-    background: #fff;
+    background: rgb(250, 2, 2);
     -webkit-transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
     transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s
 }
 
 #btn-show-content {
     padding: 20px;
-    background: #fff;
+    background: rgb(228, 5, 5);
     cursor: pointer;
     display: inline-block;
     -webkit-transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
@@ -975,7 +984,7 @@ header .member-actions {
 }
 
 .rsvp {
-    padding-bottom: 140px
+    padding-bottom: 100px
 }
 
 .rsvp .rsvp-form .rsvp-btn {
@@ -996,9 +1005,9 @@ header .member-actions {
     text-align: left;
     position: relative
 }
-
+/*RSVP Icons*/
 .rsvp .rsvp-form .form-input-group i {
-    color: rgb(93, 161, 157);
+    color: #385291;
     font-size: 14px
 }
 
@@ -1006,7 +1015,7 @@ header .member-actions {
     content: "";
     height: 30px;
     width: 1px;
-    border-right: solid 1px #E6E9EA;
+    border-right: solid 1px #eae6e6ec;
     position: absolute;
     top: 50%;
     left: 30px;
@@ -1033,7 +1042,7 @@ header .member-actions {
     border-radius: 6px;
     border: none
 }
-
+/*Text in RSVP*/
 .rsvp .rsvp-form .form-input-group input::-webkit-input-placeholder {
     color: #BCC1C3
 }
@@ -1043,18 +1052,18 @@ header .member-actions {
 }
 
 .rsvp .rsvp-form .form-input-group input::-moz-placeholder {
-    color: #BCC1C3
+    color: #ee0d0d
 }
 
 .rsvp .rsvp-form .form-input-group input:-ms-input-placeholder {
-    color: #BCC1C3
+    color: #f50404
 }
 
 footer .content {
-    border-top: 1px solid #E6E9EA;
-    padding-bottom: 20px
+    border-top: 1px solid #eae6e6;
+    padding-bottom: 10px
 }
-
+/*round with arrow at footer*/
 footer .to-top-wrapper {
     font-size: 30px;
     display: block;
@@ -1063,8 +1072,8 @@ footer .to-top-wrapper {
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    border: 1px solid #E6E9EA;
-    background: #fff
+    border: 1px solid #eae6e6;
+    background: #ffff
 }
 
 footer .to-top-wrapper .to-top {
@@ -1093,3 +1102,23 @@ body.modal-open {
 .modal-body {
     padding: 25px
 }
+
+ol {
+    padding-left: 35px;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(oliviadhorgent.ttf)
+    font-weight: bold
+}
+
+strong {
+      Color: #385291
+}
+
+iframe {
+    width: 100%;
+}
+
+  
